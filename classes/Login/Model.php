@@ -1,8 +1,9 @@
 <?php
 
-namespace Login;
+namespace MyApp\Login;
 
-use Dbh;
+use MyApp\Dbh;
+
 
 class Model extends Dbh
 {

@@ -81,7 +81,12 @@ include('includes/header.inc.php')
 
       </div>
     </div>
-    <img src="https://picsum.photos/1920/1080" alt="" class="img-fluid position-fixed" style="z-index: -5;">
+    <img src="https://picsum.photos/1920/1080" alt="" style="
+      z-index: -5;
+      height: 100vh;
+      width:auto;
+      position: fixed;
+    ">
   </div>
 
   <script src="./js/app.js"></script>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Signup;
+namespace MyApp\Signup;
 
 class Control extends Model
 {

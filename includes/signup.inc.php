@@ -1,5 +1,6 @@
 <?php
-include('class-autoload.inc.php');
+// include('class-autoload.inc.php');
+include('../vendor/autoload.php');
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
   $first_name = $_POST['firstName'];
@@ -8,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   $password = $_POST['password'];
   $repeatPassword = $_POST['repeatPassword'];
 
-  $signUp = new Signup\Control($first_name, $last_name, $email, $password, $repeatPassword);
+  $signUp = new MyApp\Signup\Control($first_name, $last_name, $email, $password, $repeatPassword);
 
   $signUp->signupUser();
 

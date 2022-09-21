@@ -1,6 +1,6 @@
 <?php
 
-namespace Login;
+namespace MyApp\Login;
 
 class Control extends Model
 {

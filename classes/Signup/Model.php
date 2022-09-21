@@ -1,8 +1,8 @@
 <?php
 
-namespace Signup;
+namespace MyApp\Signup;
 
-use Dbh;
+use MyApp\Dbh;
 
 class Model extends Dbh
 {

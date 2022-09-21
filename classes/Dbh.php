@@ -1,5 +1,9 @@
 <?php
 
+namespace MyApp;
+
+use PDO;
+
 class Dbh
 {
   private $db_host = "localhost";
@@ -13,7 +17,7 @@ class Dbh
       $connection = new PDO("mysql:host={$this->db_host};dbname={$this->db_name};charset=utf8", $this->db_user, $this->db_password);
       $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
       return $connection;
-    } catch (PDOException $e) {
+    } catch (\PDOException $e) {
       print "Error: " . $e->getMessage() . "<br/>";
       die();
     }
