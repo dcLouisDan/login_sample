@@ -1,7 +1,7 @@
 <?php
 include('class-autoload.inc.php');
 
-if ($_SERVER['REQUEST_METHOD' == 'POST']) {
+if ($_SERVER['REQUEST_METHOD'] == ['POST']) {
   $first_name = $_POST['firstName'];
   $last_name = $_POST['lastName'];
   $email = $_POST['email'];
